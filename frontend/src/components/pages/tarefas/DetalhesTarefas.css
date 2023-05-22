@@ -1,0 +1,35 @@
+.containerDetalhes {
+    background-color: #f8f9fa;
+    display: flex;
+    flex-direction: column;
+    min-height: 60vh;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .containerDetalhes h3 {
+    margin: 0 0 10px;
+    color: #333;
+    font-size: 24px;
+  }
+  
+  .containerDetalhes p {
+    margin: 4px 0;
+    color: #333;
+  }
+  
+  .containerDetalhes hr {
+    margin: 15px 0;
+    border: 0;
+    border-top: 1px solid #ccc;
+  }
+  
+  .containerDetalhes p:first-of-type {
+    margin-top: 10px;
+  }
+  
+  .containerDetalhes p:last-of-type {
+    margin-bottom: 10px;
+  }
+  

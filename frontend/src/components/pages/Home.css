@@ -1,0 +1,98 @@
+/* Home.css */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #444;
+}
+
+th {
+  background-color: #333;
+  color: #fff;
+}
+
+.setor,
+.prioridade,
+.status,
+.proximidadeData,
+.buscar {
+  width: 20%;
+}
+
+.setor select,
+.prioridade select,
+.status select,
+.proximidadeData select{
+  width: 100%;
+  padding: 5px;
+  background-color: #444;
+  color: #fff;
+  border: none;
+}
+
+
+.buscar input[type="text"] {
+  width: 100%;
+  padding: 5px;
+  background-color: #444;
+  color: #fff;
+  border: none;
+}
+
+.colspan {
+  text-align: center;
+  padding: 20px;
+  background-color: #555;
+  color: #fff;
+}
+
+.setor label,
+.prioridade label,
+.status label,
+.proximidadeData label  {
+  color: #fff;
+}
+
+
+.filter-checkbox input[type="checkbox"] {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #ccc;
+  border-radius: 3px;
+  outline: none;
+  transition: border-color 0.2s;
+  cursor: pointer;
+}
+
+.filter-checkbox input[type="checkbox"]:checked {
+  border-color: #1c5d99;
+  background-color: #1c5d99;
+}
+
+.filter-checkbox input[type="checkbox"]:checked::before {
+  content: '\2713';
+  font-size: 14px;
+  color: #fff;
+  text-align: center;
+  line-height: 18px;
+}
+
+#ordenarPor{
+  width: 100%;
+}
+
+@media (max-width: 600px) {
+  #ordenarPor{
+    width: 100%;
+  }
+}
+
+
