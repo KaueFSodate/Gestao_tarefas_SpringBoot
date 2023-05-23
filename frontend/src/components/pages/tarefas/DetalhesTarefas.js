@@ -44,7 +44,7 @@ function DetalhesTarefas() {
               <hr></hr>
               <p>Observação<br></br> {tarefa.observacao}</p>
               <hr></hr>
-              <p>Data de conclusão<br />{formatDate(tarefa.dataConclusao)}</p>
+              <p>Data de conclusão<br />{tarefa.dataConclusao.slice(8, 10)}/{tarefa.dataConclusao.slice(5, 7)}/{tarefa.dataConclusao.slice(0, 4)}</p>
               <hr></hr>
               <p>Data de criação<br /> {formatDate(tarefa.createdAt)}</p>
 
