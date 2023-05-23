@@ -25,6 +25,7 @@ function Register() {
   }
 
   return (
+    <div className="ContainerR">
     <div className="register-container">
       <form onSubmit={handleSubmit}>
         <h1>Cadastro</h1>
@@ -51,6 +52,7 @@ function Register() {
           Já tem uma conta? <Link to="/login">Fazer login</Link>
         </p>
       </form>
+    </div>
     </div>
   );
 }
