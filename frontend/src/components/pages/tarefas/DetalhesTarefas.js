@@ -46,7 +46,7 @@ function DetalhesTarefas() {
               <hr></hr>
               <p>Data de conclusão<br />{formatDate(tarefa.dataConclusao)}</p>
               <hr></hr>
-              <p>Data de criação<br /> {new Date(tarefa.createdAt).toLocaleDateString()}</p>
+              <p>Data de criação<br /> {formatDate(tarefa.createdAt)}</p>
 
               <hr></hr>
               <p>Categoria<br></br> {tarefa.categoria}</p>
