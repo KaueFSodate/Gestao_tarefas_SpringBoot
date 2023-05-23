@@ -68,7 +68,7 @@ public class tarefaController {
         }
 
         // Verificar se a prioridade da tarefa foi fornecida
-        if (tarefa.getPrioridade() == 0) {
+        if (tarefa.getPrioridade() == null || tarefa.getPrioridade().isEmpty()) {
             return ResponseEntity.status(HttpStatus.UNPROCESSABLE_ENTITY).body("A prioridade não foi inserida");
         }
 
@@ -152,7 +152,7 @@ public class tarefaController {
         }
 
         // Verificar se a prioridade da tarefa foi fornecida
-        if (tarefa.getPrioridade() == 0) {
+        if (tarefa.getPrioridade() == null || tarefa.getPrioridade().isEmpty()) {
             return ResponseEntity.status(HttpStatus.UNPROCESSABLE_ENTITY).body("A prioridade não foi inserida");
         }
 
