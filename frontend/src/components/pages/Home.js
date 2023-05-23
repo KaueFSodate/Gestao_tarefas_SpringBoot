@@ -40,19 +40,7 @@ function Home() {
     )
     .filter((tarefas) => (categoria ? tarefas.categoria === categoria : true))
     .filter((tarefas) => (status ? tarefas.status === status : true))
-    .filter((tarefas) => {
-      if (prioridade === 'baixa') {
-        return tarefas.prioridade >= 1 && tarefas.prioridade <= 3;
-      } else if (prioridade === 'media') {
-        return tarefas.prioridade >= 4 && tarefas.prioridade <= 6;
-      } else if (prioridade === 'alta') {
-        return tarefas.prioridade >= 7 && tarefas.prioridade <= 9;
-      } else if (prioridade === 'muitoalta') {
-        return tarefas.prioridade === 10;
-      } else {
-        return true;
-      }
-    })
+    .filter((tarefas) => (prioridade ? tarefas.prioridade === prioridade : true))
     .sort((a, b) => {
       if (ordenarPor === 'maisRecente') {
         return new Date(b.createdAt) - new Date(a.createdAt);
@@ -136,10 +124,10 @@ function Home() {
               <label>Prioridade</label>
               <select id="prioridade" value={prioridade} onChange={handlePrioridade}>
                 <option value="">Todos</option>
-                <option value="baixa">Baixa</option>
-                <option value="media">Média</option>
-                <option value="alta">Alta</option>
-                <option value="muitoalta">Muito Alta</option>
+                <option value="Baixa">Baixa</option>
+                <option value="Media">Média</option>
+                <option value="Alta">Alta</option>
+                <option value="Muito alta">Muito alta</option>
               </select>
             </th>
 
