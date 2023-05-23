@@ -32,7 +32,7 @@ public class Tarefa {
     
     private String dataConclusao;
     
-    private int prioridade;
+    private String prioridade;
     
     private String observacao;
 
@@ -82,11 +82,11 @@ public class Tarefa {
         this.dataConclusao = dataConclusao;
     }
 
-    public int getPrioridade() {
+    public String getPrioridade() {
         return prioridade;
     }
 
-    public void setPrioridade(int prioridade) {
+    public void setPrioridade(String prioridade) {
         this.prioridade = prioridade;
     }
 
