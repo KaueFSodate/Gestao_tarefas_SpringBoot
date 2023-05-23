@@ -84,18 +84,17 @@ function EditarTarefas() {
                   <input
                   type="text"
                   name="descricao"
-                  placeholder="Digite o nome da vaga"
+                  placeholder="Digite a descrição da tarefa"
                   onChange={handleChange}
                   value={tarefa.descricao || ""}
                   />
                   <label>Prioridade: </label>
-                  <input
-                  type="text"
-                  name="prioridade"
-                  placeholder="Digite a prioridade da tarefa"
-                  onChange={handleChange}
-                  value={tarefa.prioridade || ""}
-                  />
+                  <select name="prioridade" onChange={handleChange} value={tarefa.prioridade || ""}>
+                    <option value="Baixa">Baixa</option>
+                    <option value="Media">Média</option>
+                    <option value="Alta">Alta</option>
+                    <option value="Muito alta">Muito alta</option>
+                  </select>
                   <label>Status: </label>
                   <select name="status" onChange={handleChange} value={tarefa.status || ""}>
                     <option value="Pendente">Pendente</option>
