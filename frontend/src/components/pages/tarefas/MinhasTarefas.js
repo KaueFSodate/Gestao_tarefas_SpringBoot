@@ -52,11 +52,8 @@ function MinhasTarefas() {
         {tarefas.length > 0 &&
                 tarefas.map((tarefa) => (
                     <div key={tarefa.id} className="containerMinhas">
-                        <div style={{ display: 'flex', alignItems: 'center' }}>
                           <h3>{tarefa.titulo}</h3>
-                        </div>
-                        <div>
-                            <div className="ContainerB">
+                          <div className="ContainerB">
                             <Link to={`/tarefas/detalhes/${tarefa.id}`} className="Link">Mais detalhes</Link>
                               <button onClick={() => {
                                 navigate(`/tarefas/editar/${tarefa.id}`);
@@ -68,8 +65,7 @@ function MinhasTarefas() {
                               className="ExcluirButton">
                               Excluir
                               </button>
-                            </div>
-                        </div>
+                          </div>
                     </div> 
                                 
         ))}
