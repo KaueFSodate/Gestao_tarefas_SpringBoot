@@ -23,6 +23,7 @@ function Login() {
   }
 
   return (
+    <div className="ContainerT">
     <div className="login-container">
       <form onSubmit={handleSubmit}>
         <h1>Login</h1>
@@ -43,6 +44,7 @@ function Login() {
           Não tem conta? <Link to="/register">Cadastrar</Link>
         </p>
       </form>
+    </div>
     </div>
   );
 }
