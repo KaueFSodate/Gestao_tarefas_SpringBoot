@@ -90,11 +90,6 @@ function Home() {
     setAtivarOrdenacao(e.target.checked);
   }
 
-  const formatDate = (dateString) => {
-    const date = new Date(dateString);
-    return format(date, 'dd/MM/yyyy');
-  };
-
   return (
     <div style={{overflowX: 'auto'}}>
       <h2 style={{ color: '#1C5D99', fontSize: '24px', fontWeight: 'bold', marginBottom: '10px', marginTop: '20px' }}>DashBoard</h2>
@@ -171,7 +166,7 @@ function Home() {
                 <td>{tarefas.categoria}</td>
                 <td>{tarefas.prioridade}</td>
                 <td>{tarefas.status}</td>
-                <td>{formatDate(tarefas.dataConclusao)}</td>
+                <td>{tarefas.dataConclusao.slice(8, 10)}/{tarefas.dataConclusao.slice(5, 7)}/{tarefas.dataConclusao.slice(0, 4)}</td>
                 <td>{tarefas.titulo}</td>
               </tr>
             ))
