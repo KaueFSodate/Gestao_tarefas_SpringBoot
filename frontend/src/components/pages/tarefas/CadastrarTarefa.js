@@ -12,6 +12,7 @@ import api from '../../../utils/api'
 
 function CadastrarTarefa() {
     const [tarefa, setTarefa] = useState({
+      prioridade: "Baixa",
       status: "Pendente",
       categoria: "Marketing",
       dataConclusao: new Date().toISOString().split('T')[0]
@@ -76,16 +77,16 @@ function CadastrarTarefa() {
                   <input
                   type="text"
                   name="descricao"
-                  placeholder="Digite o nome da vaga"
+                  placeholder="Digite a descrição da tarefa"
                   onChange={handleChange}
                   />
                   <label>Prioridade: </label>
-                  <input
-                  type="text"
-                  name="prioridade"
-                  placeholder="Digite a prioridade da tarefa"
-                  onChange={handleChange}
-                  />
+                  <select name="prioridade" onChange={handleChange}>
+                    <option value="Baixa">Baixa</option>
+                    <option value="Media">Média</option>
+                    <option value="Alta">Alta</option>
+                    <option value="Muito alta">Muito alta</option>
+                  </select>
                   <label>Status: </label>
                   <select name="status" onChange={handleChange}>
                     <option value="Pendente">Pendente</option>
