@@ -171,7 +171,7 @@ function Home() {
                 <td>{tarefas.categoria}</td>
                 <td>{tarefas.prioridade}</td>
                 <td>{tarefas.status}</td>
-                <td>{formatDate(tarefas.dataConclusao)}</td>
+                <td>{tarefa.dataConclusao.slice(8, 10)}/{tarefa.dataConclusao.slice(5, 7)}/{tarefa.dataConclusao.slice(0, 4)}</td>
                 <td>{tarefas.titulo}</td>
               </tr>
             ))
