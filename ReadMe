@@ -1,0 +1,21 @@
+Iniciar API no VSCODE
+
+Back-end
+1-Importe o arquivo do meu repositório " Gestao_tarefas_SpringBoot-master.zip "
+2-Descompacte
+3-Crie uma DATABASE com o nome java
+4-configura o application.properties com a sua senha e usuário do banco mysql
+5-Apra as pastas pelo VSCODE, vai até o main da API SprinBoot
+6-Aguarde o compilador baixar as dependências
+7-Aperte em run na class main
+
+
+Front-end
+1-Navegue até o diretório /frontend no terminal
+2-Instale as dependências com o " npm install "
+3-E por fim o npm start
+
+
+Com isso ira abrir um página no navegador com o endereço: http://localhost:3000/
+
+
