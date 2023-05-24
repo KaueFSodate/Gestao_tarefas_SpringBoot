@@ -1,8 +1,8 @@
 .containerDetalhes {
     background-color: #f8f9fa;
     display: flex;
+    flex:1;
     flex-direction: column;
-    min-height: 60vh;
     border-radius: 10px;
     padding: 15px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
