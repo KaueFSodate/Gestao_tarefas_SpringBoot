@@ -143,7 +143,7 @@ function Home() {
                     <option value="maisProxima">Mais próxima da data de conclusão</option>
                     <option value="maisDistante">Menos próxima da data de conclusão</option>
                 </select>
-                <input type="checkbox" checked={ativarOrdenacao} onChange={handleAtivarOrdenacao} />
+                <input type="checkbox" checked={ativarOrdenacao} onChange={handleAtivarOrdenacao} style={{ marginLeft: '10px'}}/>
               </div>
             </th>
 
