@@ -31,7 +31,7 @@ function CadastrarTarefa() {
 
 
 
-    // Função para cadastrar a vaga
+    // Função para cadastrar a tarefa
     async function handleSubmit(e){
         e.preventDefault()
 
