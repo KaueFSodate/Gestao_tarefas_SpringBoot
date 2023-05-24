@@ -37,7 +37,7 @@ function EditarTarefas() {
     }
 
 
-    // Função para cadastrar a vaga
+    // Função para editar a tarefa
     async function handleEdit(e){
         e.preventDefault()
 
